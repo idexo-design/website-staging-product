@@ -38,7 +38,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="aura.css">
 </head>
 
 <body>
@@ -83,12 +82,8 @@
                     <li>Seamless HVAC Integration</li>
                 </ul>
             </div>
-            <div class="hero-image aura-container">
-                <div class="aura-device">
-                    <div class="aura-interface"></div>
-                    <div class="aura-base"></div>
-                </div>
-                <!-- To replace with real photo later: <img src="assets/aura-product-hero.png" alt="..."> -->
+            <div class="hero-image">
+                <img src="assets/Product.png" alt="Aura Climate Architect Device">
             </div>
         </div>
     </header>
@@ -128,7 +123,7 @@
 
                 <!-- Right Column: Form -->
                 <div class="contact-form-container">
-                    <form name="waitlist" method="POST" netlify netlify-honeypot="bot-field">
+                    <form name="waitlist" id="waitlist-form" method="POST" netlify netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="waitlist">
                         <p style="display: none;">
                             <label>Don't fill this out: <input name="bot-field" /></label>

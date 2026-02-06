@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Form Handling (Frontend Demo + Netlify Support)
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById('waitlist-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
         // If Netlify, we let it submit naturally or use AJAX. 
