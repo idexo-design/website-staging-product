@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | The World's First Climate Architect</title>
+    <meta name="description"
+        content="Breathe intelligent air. Aura is a next-generation air purifier, dehumidifier, and HVAC assistant that predicts airflow and maps your room.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://idexodesign.com/">
+
+    <!-- Security: Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://idexodesign.com/">
+    <meta property="og:title" content="Aura | The World's First Climate Architect">
+    <meta property="og:description"
+        content="Breathe intelligent air. Aura is a next-generation air purifier, dehumidifier, and HVAC assistant.">
+    <meta property="og:image" content="https://idexodesign.com/assets/aura-product-hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://idexodesign.com/">
+    <meta property="twitter:title" content="Aura | The World's First Climate Architect">
+    <meta property="twitter:description"
+        content="Breathe intelligent air. Aura is a next-generation air purifier, dehumidifier, and HVAC assistant.">
+    <meta property="twitter:image" content="https://idexodesign.com/assets/aura-product-hero.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="IDEXO-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aura.css">
+</head>
+
+<body>
+    <!-- Netlify Form Detection -->
+    <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="text" name="interests" />
+    </form>
+
+    <!-- Floating Glass Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="IDEXO-logo.png" alt="IDEXO" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <!-- Navigation links removed for focus -->
+            </div>
+            <a href="#waitlist" class="btn btn-primary nav-cta">Join Waitlist</a>
+            <!-- Mobile Toggle removed as there are no menu links, just the CTA which is visible or accessible via scroll -->
+        </div>
+    </nav>
+
+    <!-- HERO / PRODUCT REVEAL -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Breathe Intelligent Air.</h1>
+                <p class="subheadline">Aura isn't just an air purifier. It's a climate architect. Dehumidification,
+                    purification, and predictive airflow in one sleek monolith.</p>
+
+                <div class="hero-buttons">
+                    <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+                    <a href="#features" class="btn btn-secondary">Discover Aura</a>
+                </div>
+
+                <ul class="hero-bullets">
+                    <li>HEPA 14 + UV-C Purification</li>
+                    <li>Integrated Smart Dehumidifier</li>
+                    <li>Predictive Room Mapping</li>
+                    <li>Seamless HVAC Integration</li>
+                </ul>
+            </div>
+            <div class="hero-image aura-container">
+                <div class="aura-device">
+                    <div class="aura-interface"></div>
+                    <div class="aura-base"></div>
+                </div>
+                <!-- To replace with real photo later: <img src="assets/aura-product-hero.png" alt="..."> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section id="features" class="trust-strip">
+        <div class="container">
+            <h2>The first device that understands your home.</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h3>Predictive Airflow</h3>
+                    <p>Uses LIDAR to map your room and direct clean air exactly where you are.</p>
+                </div>
+                <div class="trust-item">
+                    <h3>Clinical Purity</h3>
+                    <p>Hospital-grade filtration removes 99.99% of particles, viruses, and allergens.</p>
+                </div>
+                <div class="trust-item">
+                    <h3>Perfect Humidity</h3>
+                    <p>Intelligent moisture control prevents mold while keeping air comfortable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / WAITLIST -->
+    <section id="waitlist" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <!-- Left Column: Text Content -->
+                <div class="contact-text">
+                    <p class="next-step">JOIN THE MOVEMENT</p>
+                    <h2 class="contact-heading">Be the first to experience it.</h2>
+                    <p class="contact-subtext">Sign up for our exclusive waitlist to receive production updates,
+                        behind-the-scenes previews, and early access when we launch.</p>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="contact-form-container">
+                    <form name="waitlist" method="POST" netlify netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="waitlist">
+                        <p style="display: none;">
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Alex Smith" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interests">Primary Climate Concern</label>
+                            <input type="text" id="interests" name="interests"
+                                placeholder="e.g. Allergies, Humidity, Pet Dander, Smoke">
+                        </div>
+
+                        <p class="form-disclaimer">We respect your privacy. No spam, ever.</p>
+
+                        <button type="submit" class="btn btn-submit">Join Waitlist</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid" style="grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div class="footer-col">
+                    <img src="IDEXO-logo.png" alt="IDEXO" class="footer-logo" loading="lazy">
+                    <p>Building the next generation of home appliances.</p>
+                </div>
+                <div class="footer-col" style="text-align: right;">
+                    <h4>Legal</h4>
+                    <ul style="justify-content: flex-end;">
+                        <li><a href="legal.html#privacy">Privacy Policy</a></li>
+                        <li><a href="legal.html#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IDEXO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
